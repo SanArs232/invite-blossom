@@ -7,7 +7,7 @@ function Header({ siteTitle }) {
 
   return (
     <nav className="flex flex-wrap items-center justify-between p-6 mb-6 bg-gray-800">
-      <div className="flex items-center flex-shrink-0 mr-6 text-white">
+      <div className="flex items-center flex-shrink-0 mr-6 text-white mx-auto">
         <span className="text-xl font-semibold tracking-tight">
           {siteTitle}
         </span>
