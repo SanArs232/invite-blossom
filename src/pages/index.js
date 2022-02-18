@@ -11,14 +11,16 @@ const IndexPage = () => (
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <StaticImage
-        src="../images/gatsby-astronaut.png"
-        alt="gatsby astronaut"
-      />
-    </div>
-    <p><Link to="/page-2/">Go to page 2</Link></p>
-    <p><Link to="/using-typescript/">Go to "Using TypeScript"</Link></p>
+    <StaticImage src="../images/background.jpg" alt="gatsby astronaut" />
+    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+     
+    </div> */}
+    <p>
+      <Link to="/page-2/">Go to page 2</Link>
+    </p>
+    <p>
+      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    </p>
   </Layout>
 )
 
