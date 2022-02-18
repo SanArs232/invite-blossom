@@ -46,6 +46,12 @@ function Header({ siteTitle }) {
           >
             page 2
           </Link>
+          <Link
+            to={`/contact`}
+            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+          >
+            Contact
+          </Link>
         </div>
         <div>
           <a
