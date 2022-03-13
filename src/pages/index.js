@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import ImageRing from "../images/ring-ivanisanja.png"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,19 +9,52 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage src="../images/background.jpg" alt="gatsby astronaut" />
+  <section className="xl:container mx-auto">
+
+  <div className=" text-center bg-wedding py-20">
+  <div>
+  <h1 className=" font-bold text-zinc-700 md:py-10 ">Добродојдовте на нашата свадебена покана</h1>
+  </div>
+<div className=" ">
+<img src={ImageRing} alt="Logo" className="h-96 w-auto mx-auto" />
+</div>
+
+<div>
+  <h2 className=" px-10 font-bold text-zinc-700 pb-10 md:w-2/4 mx-auto ">Чест и задоволство ни е да ве поканиме 
+на нашата свадбена прослава на ден </h2>
+<div className="font-bold text-zinc-700 text-5xl  pb-10"> 24.06.2022</div>
+  </div>
+  <div>
+  <h2 className=" font-bold text-zinc-700  ">во летниот дел на ресторан „Ваго„</h2>
+  <h2 className=" font-bold text-zinc-700  ">во 19:00 часот</h2>
+  </div>
+  </div>
+
+<div className="h-96 "></div>
+  </section>
+  
+
+ 
+ 
+
+  
+   
+
+   
+
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-     
-    </div> */}
-    <p>
+   <StaticImage src="../images/background.jpg" alt="gatsby astronaut" />
+     <StaticImage src="../images/ivanisanja-bg.png"/>
+      <p>
       <Link to="/page-2/">Go to page 2</Link>
     </p>
     <p>
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </p>
+    </div> */}
+ 
+
+   
   </Layout>
 )
 

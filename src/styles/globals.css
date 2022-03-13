@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
 @tailwind base;
 
 h1 {
@@ -15,3 +17,19 @@ a {
 
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  html {
+    font-family: 'Gabriela', system-ui, sans-serif;
+  }
+}
+.bg-wedding{
+  background-image:url('../images/bg-sanjaiivan.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+}
+
+
