@@ -38,7 +38,7 @@ function Header({ siteTitle }) {
             href="#responsive-header"
             className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-gray-800"
           >
-            Lokacija
+            Location
           </Link>
           {/* <Link
             to={`/page-2`}
@@ -50,15 +50,17 @@ function Header({ siteTitle }) {
             to={`/contact`}
             className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-gray-800"
           >
-            Rezerviraj si mesto
+            Reserve a spot
           </Link>
+
           <Link
-            to={`/index-en`}
+            to={`/`}
             className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-gray-800"
           >
-            / Englisch
+            / Macedonian
           </Link>
         </div>
+        <div></div>
       </div>
     </nav>
   )
