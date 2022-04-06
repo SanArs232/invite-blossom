@@ -15,7 +15,7 @@ const IndexPage = () => (
       <div className=" text-center bg-wedding py-20">
         <div>
           <h1 className=" font-bold text-zinc-700 md:py-10 ">
-            Добродојдовте на нашата свадебена покана
+            Добродојдовте на нашата свадбена покана
           </h1>
         </div>
         <div className=" ">
