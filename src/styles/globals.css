@@ -25,11 +25,12 @@ a {
   }
 }
 .bg-wedding{
-  background-image:url('../images/bg-sanjaiivan.png');
+  background-image:url('../images/bg-white.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   background-position: center center;
 }
+
 
 

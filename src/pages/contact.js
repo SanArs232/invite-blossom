@@ -139,6 +139,7 @@ const Contact = () => {
                 onChange={handleChange}
                 value={formState.message}
                 placeholder="Enter Message"
+                className="h-32"
               ></textarea>
             </label>
           </p>
