@@ -18,7 +18,7 @@ import SEO from "../components/seo"
 const Contact = () => {
   const [formState, setFormState] = useState({
     name: "",
-    message: "",
+    email: "",
   })
   const encode = data => {
     return Object.keys(data)
@@ -155,7 +155,7 @@ const Contact = () => {
         </div>
 
         <div className="pb-5 -mt-10 flex-col">
-          
+        <input type="hidden" name="contact" value="contact" />
         <span className="px-28 text-2xl text-right" htmlFor="name">Име и Презиме:</span>
               <input
                 id="name"
@@ -173,10 +173,10 @@ const Contact = () => {
           <span className="px-28 text-2xl text-right" htmlFor="name">Внесете емаил:</span>
                 <input
                   id="email"
-                  type="text"
+                  type="email"
                   name="email"
                   onChange={handleChange}
-                  value={formState.name}
+                  value={formState.email}
                   placeholder="Внесете го вашиот емаил"
                   className="w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline "
                 />
@@ -199,19 +199,7 @@ const Contact = () => {
               
              </div>
 
-             <div>
-            <span className="px-20 text-2xl text-center">
-              Порака до младите:{" "}
-              </span>
-              <textarea
-                name="message"
-                onChange={handleChange}
-                value={formState.message}
-                placeholder="Опционална порака до младите"
-                className=" h-32 w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline"
-              ></textarea>
-           
-          </div>
+            
 
           <div className="">
           <span className="px-20 text-2xl text-center text-white ">
