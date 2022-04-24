@@ -18,7 +18,7 @@ import SEO from "../components/seo"
 const Contact = () => {
   const [formState, setFormState] = useState({
     name: "",
-    chouse: "",
+    message: "",
   })
   const encode = data => {
     return Object.keys(data)
@@ -168,17 +168,31 @@ const Contact = () => {
               />
            
           </div>
+          <div className="py-5 flex-col">
+          
+          <span className="px-28 text-2xl text-right" htmlFor="name">Внесете емаил:</span>
+                <input
+                  id="email"
+                  type="text"
+                  name="email"
+                  onChange={handleChange}
+                  value={formState.name}
+                  placeholder="Внесете го вашиот емаил"
+                  className="w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline "
+                />
+             
+            </div>
       
           <div className="py-5">
            <span className="px-5 text-2xl" htmlFor="name">
               Страна (невеста/младоженец): 
                </span>
                  <input
-                   id="chouse"
+                   id="message"
                    type="text"
-                   name="chouse"
+                   name="message"
                    onChange={handleChange}
-                   value={formState.chouse}
+                   value={formState.message}
                    placeholder="невеста/младоженец"
                    className="w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline"
                  />
