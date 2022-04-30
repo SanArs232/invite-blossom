@@ -111,6 +111,21 @@ const Contact = () => {
                   </svg>
                 </div>
               </div>
+
+
+              <div>
+            <span className="px-20 text-2xl text-center">
+              Порака до младите:{" "}
+              </span>
+              <textarea
+                name="message"
+                onChange={handleChange}
+                value={formState.message}
+                placeholder="Опционална порака до младите"
+                className=" h-32 w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline"
+              ></textarea>
+           
+          </div>
             </div>
             {/* <select name="role[]" multiple>
               <option
@@ -131,6 +146,13 @@ const Contact = () => {
               </option>
             </select> */}
           </div>
+
+          <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
           <p>
             <label className="bg-gray-200 px-10 border-4">
               Message for us:{" "}
