@@ -70,7 +70,7 @@ const Contact = () => {
             на ден{" "}
           </h2>
           <h1 className="font-bold text-zinc-700 pb-10 lg:pb-20 text-4xl md:text-5xl">
-         26.06.2022   
+         24.06.2022   
           </h1>
         <div className="h-32 hidden lg:block"></div>
         </div>
