@@ -11,6 +11,8 @@ import IconRings from "../images/icon-rings.png"
 import IconPhoto from "../images/icon-photo.png"
 import IconDance from "../images/icon-dance.png"
 import IconDinner from "../images/icon-dinner.png"
+import IconChin from "../images/icon-chin-chin.png"
+import IconCake from "../images/icon-cake.png"
 import FlowerForm from "../images/flower-form.png"
 import FlowerFormReverse from "../images/flowerformreverse.png"
 import RingFlowerCover from "../images/bg-si.png"
@@ -21,9 +23,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Contact = () => {
+  
   const [formState, setFormState] = useState({
     name: "",
-    email: "",
+    email:"",
+    message:'', 
+    
   })
   const encode = data => {
     return Object.keys(data)
@@ -31,11 +36,12 @@ const Contact = () => {
       .join("&")
   }
 
-  const handleChange = e =>
-    setFormState({
+  function handleChange(e) {
+    return setFormState({
       ...formState,
       [e.target.name]: e.target.value,
     })
+  }
 
   const handleSubmit = e => {
     fetch("/", {
@@ -43,64 +49,70 @@ const Contact = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...formState }),
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("Form successfully submitted!"))
       .catch(error => alert(error))
 
     e.preventDefault()
   }
+
 
   return (
 
   <Layout>
     <Nav />
     <SEO title="Home" />
-    <section className="xl:container mx-auto">
-  
-  <div className="text-center bg-wedding ">
+     
+<section className="xl:container mx-auto">
+    <div className="text-center bg-wedding ">
 
       <div className="py-10">
-      <div className="flex flex-row justify-between">
-        <div className="hidden md:block">
+        <div className="flex flex-row justify-between">
+         <div className="hidden md:block">
             <img src ={FlowerForm} alt="Logo" className="mx-auto md:-mt-20" />
-          </div>
-          
-        <div>
-        <h2 className=" px-3 md:px-10 pb-5 lg:w-11/12 mx-auto md:text-3xl font-bold text-zinc-700">
-            Чест и задоволство ни е да ве поканиме на нашата Свадбена Прослава
-            на ден{" "}
+         </div>
+          {/* intro */}
+          <div>
+          <h2 className=" px-3 md:px-10 pb-5 lg:w-11/12 mx-auto md:text-3xl font-bold text-zinc-700">
+              Чест и задоволство ни е да ве поканиме на нашата Свадбена Прослава
+              на ден{" "}
           </h2>
-          <h1 className="font-bold text-zinc-700 pb-10 lg:pb-20 text-4xl md:text-5xl">
-         24.06.2022   
-          </h1>
-        <div className="h-32 hidden lg:block"></div>
-        </div>
 
+          <h1 className="font-bold text-zinc-700 pb-10 lg:pb-20 text-4xl md:text-5xl">
+          24.06.2022   
+          </h1>
+                <div className="h-32 hidden lg:block"></div>
+          </div>
           <div className="hidden md:block">
             <img src ={FlowerFormReverse} alt="Logo" className="mx-auto md:-mt-20" />
           </div>
+          {/* end of intro */}
         </div>
-
         <div className="mx-auto lg:-mt-20 xl:-mt-40">
               <img src={RingFlowerCover} alt="Logo" className="mx-auto hidden md:block" />
-         </div>
+        </div>
          <div className="mx-auto lg:-mt-20 xl:-mt-40">
               <img src={RingFlowerCoverSm} alt="Logo" className="mx-auto block md:hidden" />
-         </div>
-          
+         </div>  
       </div>
+      {/* End -01/part */}
 
-        <div div className="font-bold text-zinc-700 lg:mt-40">
-          <div className="md:text-3xl">
-          <a href="https://goo.gl/maps/wGyno8UJjkjUiwdV8" target="_blank" >
-          <h2 className="px-3 md:px-10 md:text-3xl text-zinc-700 pb-5 decoration-solid">
-            Свадбената Прослава ќе се одржи во летната градина на ресторант <span className="text-zinc-700 font-extrabold hover:text-amber-500">„Ваго„</span>
-          </h2>
-          </a>
-          <span className="text-zinc-700 font-extrabold text-2xl md:text-3xl"> во 19:30 часот</span>
-        </div>
+          
+      <div className="font-bold text-zinc-700 lg:mt-40">
 
-        <div className="md:text-xl py-20  text-zinc-700 mx-auto">
-        <div className="flex-wrap flex flex-row -mt-10 ">
+             {/* location section */}
+             <div className="md:text-3xl">
+              <a href="https://goo.gl/maps/wGyno8UJjkjUiwdV8" target="_blank" >
+              <h2 className="px-3 md:px-10 md:text-3xl text-zinc-700 pb-5 decoration-solid">
+              Свадбената Прослава ќе се одржи во летната градина на ресторант <span className="text-zinc-700 font-extrabold hover:text-amber-500">„Ваго„</span>
+             </h2>
+             </a>
+             <span className="text-zinc-700 font-extrabold text-2xl md:text-3xl"> во 19:30 часот</span>
+             </div>
+
+
+              {/* icon section */}
+           <div className="md:text-xl py-20  text-zinc-700 mx-auto">
+            <div className="flex-wrap flex flex-row -mt-10 ">
               <div className="mx-auto flex-2">
                     <img src={IconCurch} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto" />
                     <div className="">
@@ -119,8 +131,9 @@ const Contact = () => {
                     19:30 часот
                     </div>
               </div>
+             
               <div className="mx-auto">
-                    <img src={IconDance} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto" />
+                    <img src={IconChin} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto" />
                     <div className="">
                     20:00 часот
                     </div>
@@ -131,111 +144,158 @@ const Contact = () => {
                     22:00 часот
                     </div>
               </div>
+              
+              <div className="mx-auto">
+                    <img src={IconCake} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto" />
+                    <div className="">
+                    11:00 часот
+                    </div>
+              </div>
+              <div className="mx-auto">
+                    <img src={IconDance} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto" />
+                    <div className="">
+                    20:00 - 01:00 часот
+                    </div>
+              </div>
              
-        </div>
-        </div>
-
-
-  <div className="bg-wedding">
-        <form
-          onSubmit={handleSubmit}
-          name="contact"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          action="thank-you"
-          netlify
-        >
-
-          <div>
-            <img src ={FooterFlower} alt="Logo" className="mx-auto lg:hidden block " />
-          </div>
-      
-       <div className="flex flex-row justify-between drop-shadow-sm">
-      
-       
-        <div>
-            <img src ={FlowerForm} alt="Logo" className="mx-auto md:-mt-20 hidden lg:block" />
-          </div>
-        <div className="lg:pt-20 pb-5 xl:pt-40 md:text-2xl px-5 md:px-10 ">Ве молиме потврдете го вашето присуство со што ке ја потполните оваа контакна форма</div>
-          <div>
-            <img src ={FlowerFormReverse} alt="Logo" className="mx-auto md:-mt-20 hidden lg:block" />
-          </div>
-        </div>
-
-        <div className="pb-5 flex-col">
-        <input type="hidden" name="contact" value="contact" />
-
-              <input
-                id="name"
-                type="text"
-                name="name"
-                onChange={handleChange}
-                value={formState.name}
-                placeholder="Внесете име и презиме"
-                className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline "
-              />
-          </div>
-          <div className="py-5 flex-col">
-                <input
-                  id="email"
-                  type="email"
-                  name="email"
-                  onChange={handleChange}
-                  value={formState.email}
-                  placeholder="Внесете го вашиот емаил"
-                  className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline "
-                />
             </div>
-      
-          <div className="py-5">
-                 <input
-                   id="message"
-                   type="text"
-                   name="message"
-                   onChange={handleChange}
-                   value={formState.message}
-                   placeholder="Страна (невеста/младоженец)"
-                   className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline"
-                 />
-             </div>
+            </div>
+           {/* end of icon */}
 
-          <div className="">
-            <button
-              type="submit"
-              className="mx-auto w-11/12 md:w-2/4 bg-amber-500 text-white mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline"
+         {/* Contact Form */}
+      <div className="bg-wedding">
+            <form
+              onSubmit={handleSubmit}
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              action="thank-you"
+              netlify
             >
-              Send
-            </button>
+              <div>
+                <img src ={FooterFlower} alt="Logo" className="mx-auto lg:hidden block " />
+              </div>
+             <div className="flex flex-row justify-between drop-shadow-sm">
+              <div>
+                <img src ={FlowerForm} alt="Logo" className="mx-auto md:-mt-20 hidden lg:block" />
+              </div>
+            <div className="lg:pt-20 pb-5 xl:pt-40 md:text-2xl px-5 md:px-10 ">Ве молиме потврдете го вашето присуство со што ќе ја потполните оваа контакна форма</div>
+              <div>
+                <img src ={FlowerFormReverse} alt="Logo" className="mx-auto md:-mt-20 hidden lg:block" />
+              </div>
+            </div>
+
+            <div className="pb-5 flex-col">
+            <input type="hidden" name="contact" value="contact" />
+                  <div>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    onChange={handleChange}
+                    value={formState.name}
+                    placeholder="Внесете име и презиме"
+                    className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline "
+                  />
+                  </div>  
+              </div>
+              <div className="py-5 flex-col">
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      onChange={handleChange}
+                      value={formState.email}
+                      placeholder="Внесете го вашиот емаил"
+                      className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline "
+                    />
+                </div>
+            <div>
+
+            {/* <div class="my-5 mx-auto">
+                  <label for="number" className="text-base text-gray-700 px-5 text-left font-bold ">Одберете број на гости</label>
+                <div>
+                  <select name="number" id="number"  value={formState.number} className="mx-auto w-11/12 md:w-2/4">
+                    <option value="one" onChange={handleChange}>01 </option>
+                    <option value="two" onChange={handleChange}>02</option>
+                    <option value="tree" onChange={handleChange}>03</option>
+                    <option value="four"onChange={handleChange}>04</option>
+                  </select>
+                </div>
+            </div> */}
+               {/* <div className=" mx-auto py-2 font-bold">
+                <fieldset>
+                      <input 
+                      id="groom"
+                      type="radio"
+                      name="groom[]"
+                      checked
+                      value={formState.groom}
+                      onChange={handleChange}
+                      className="px-2"/>
+                      <label className="pr-10 px-2">Младоженец</label> 
+
+                     <input 
+                      id="bride"
+                      type="radio"
+                      name="bride[]"
+                      value={formState.bride}
+                      onChange={handleChange}/>
+                      <label className="px-2">Невеста</label>
+                 </fieldset>
+               </div>  */}
+            
+
+
+               {/* <div className="py-5">
+                    <input
+                      id="message"
+                      type="text"
+                      name="message"
+                      onChange={handleChange}
+                      value={formState.message}
+                      placeholder="Страна (невеста/младоженец)"
+                      className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline"
+                    />
+                </div> */}
+
+              <div className="">
+                <button
+                  type="submit"
+                  className="mx-auto w-11/12 md:w-2/4 bg-amber-500 text-white mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline"
+                >
+                  Испрати
+                </button>
+              </div>
+              </div>
+
+
+              <div>
+                <img src ={FooterFlower} alt="Logo" className="mx-auto md:-mt-20 md:pt-20 md:px-20" />
+              </div>
+
+            </form>
           </div>
 
+          {/* End of Contact Form */}
+      
+      
+      
+                    
+
+                        
 
 
-          <div>
-            <img src ={FooterFlower} alt="Logo" className="mx-auto md:-mt-20 md:pt-20 md:px-20" />
-          </div>
-
-        </form>
       </div>
-
-
-      
-      
-      
-      </div>
-
-      <div className="bg-white max-h-96 sm:mt-20 mb-10 ">
-     <footer> Created with love by <span className="text-amber-500 ">Sanja & Ivan</span> 
-    <div>  2022 </div> </footer>
-   </div> 
-
   </div>
-
-
-  
-
     </section>
     
+    {/* <div className="bg-white max-h-96 sm:mt-20 mb-10 ">
+                        <footer> Created with love by <span className="text-amber-500 ">Sanja & Ivan</span> 
+                        <div>  2022 </div> </footer>
+                      </div>  */}
+
 
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
    <StaticImage src="../images/background.jpg" alt="gatsby astronaut" />
