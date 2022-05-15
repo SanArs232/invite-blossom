@@ -33,13 +33,11 @@ function Header({ siteTitle }) {
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
       >
         <div className="text-lg container mx-auto items-center text-center font-bold">
-          <Link
-            to={`/`}
-            href="#responsive-header"
-            className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-amber-500"
-          >
+        <div className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 "
+          ><a href="https://goo.gl/maps/wGyno8UJjkjUiwdV8" target="_blank" className="text-gray-800 lg:inline-block hover:text-amber-500">
             Location
-          </Link>
+        </a>
+          </div>
          
           <Link
             to={`/`}

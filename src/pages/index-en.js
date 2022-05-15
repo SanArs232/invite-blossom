@@ -276,7 +276,7 @@ const Contact = () => {
                                 </div>
 
                                 <div>
-                                    <img src={FooterFlower} alt="Logo" className="mx-auto md:-mt-20 md:pt-20 md:px-20"/>
+                                    <img src={FooterFlower} alt="Logo" className="mx-auto md:-mt-38 md:pt-20 md:px-20"/>
                                 </div>
                                 <div className="bg-white ">
                         <footer> Created with love by <span className="text-amber-500 ">Sanja & Ivan</span>
