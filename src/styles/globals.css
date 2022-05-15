@@ -18,6 +18,31 @@ a {
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    @apply w-full border-amber-500 border-2 rounded-sm shadow-sm focus:border-amber-500 focus:ring-amber-500;
+  }
+  [type="checkbox"],
+  [type="radio"] {
+    @apply border-amber-500 rounded text-amber-500 focus:ring-amber-500;
+  }
+}
+
+
 
 @layer base {
   html {

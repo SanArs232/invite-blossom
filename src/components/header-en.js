@@ -36,29 +36,23 @@ function Header({ siteTitle }) {
           <Link
             to={`/`}
             href="#responsive-header"
-            className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-gray-800"
+            className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-amber-500"
           >
             Location
           </Link>
-          {/* <Link
-            to={`/page-2`}
-            className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-gray-800"
-          >
-           
-          </Link> */}
-          <Link
-            to={`/contact`}
-            className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-gray-800"
-          >
-            Reserve a spot
-          </Link>
-
+         
           <Link
             to={`/`}
             className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-gray-800"
           >
             / Macedonian
           </Link>
+
+          <div className="block mt-4 mr-4  lg:inline-block lg:mt-0 bg-white border-2 border-amber-500 px-5 "
+          ><a href="https://drive.google.com/drive/folders/14LFF_V_2fp7bfHYqUd-fJKgljmKZvP_n?usp=sharin8" target="_blank" className="text-gray-700 lg:inline-block hover:text-amber-500">
+            Upload pictures
+        </a>
+          </div>
         </div>
         <div></div>
       </div>

@@ -8,9 +8,6 @@ function Header({ siteTitle }) {
   return (
     <nav className="flex flex-wrap items-center justify-between p-6  bg-white">
       <div className="flex items-center flex-shrink-0 mr-6 text-gray-800 mx-auto">
-        {/* <span className="text-xl font-semibold tracking-tight">
-          {siteTitle}
-        </span> */}
       </div>
       <div className="block lg:hidden">
         <button
@@ -38,24 +35,20 @@ function Header({ siteTitle }) {
             Локација
         </a>
           </div>
-          {/* <Link
-            to={`/page-2`}
-            className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-gray-800"
-          >
-           
-          </Link> */}
-          <Link
-            to={`/contact`}
-            className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-gray-800"
-          >
-           Потврди Присуство
-          </Link>
+         
           <Link
             to={`/index-en`}
             className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-gray-800"
           >
             / Englisch
+           
           </Link>
+
+         <div className="block mt-4 mr-4  lg:inline-block lg:mt-0 bg-white border-2 border-amber-500 px-5 "
+          ><a href="https://drive.google.com/drive/folders/14LFF_V_2fp7bfHYqUd-fJKgljmKZvP_n?usp=sharin8" target="_blank" className="text-gray-700 lg:inline-block hover:text-amber-500">
+            Споделете фотографии
+        </a>
+          </div>
         </div>
       </div>
     </nav>

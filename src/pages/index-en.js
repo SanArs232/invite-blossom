@@ -3,9 +3,11 @@ import {Link} from "gatsby"
 import {StaticImage} from "gatsby-plugin-image"
 import {useState} from "react"
 import ImageRing from "../images/ring-ivanisanja.png"
-import Nav from "../components/header"
-import ImageFlower from "../images/upper-flower.png"
-import ImageFlowerReverse from "../images/upper-flower-reverse.png"
+import Navi from "../components/header-en"
+// import ImageFlower from "../images/upper-flower.png"
+// import ImageFlowerReverse from "../images/upper-flower-reverse.png"
+import IconCheers from "../images/icon-chin-chin.png"
+import IconCake from "../images/icon-cake.png"
 import IconCurch from "../images/icon-church.png"
 import IconRings from "../images/icon-rings.png"
 import IconPhoto from "../images/icon-photo.png"
@@ -75,7 +77,7 @@ const Contact = () => {
     return (
 
         <Layout>
-            <Nav/>
+            <Navi/>
             <SEO title="Home"/>
             <section className="xl:container mx-auto">
 
@@ -88,12 +90,12 @@ const Contact = () => {
                             </div>
 
                             <div>
-                                <h2 className=" px-3 md:px-10 pb-5 lg:w-11/12 mx-auto md:text-3xl font-bold text-zinc-700">
-                                    Чест и задоволство ни е да ве поканиме на нашата Свадбена Прослава
-                                    на ден{" "}
+                                <h2 className=" px-3 md:px-10 pb-5 mx-auto md:text-3xl font-bold  text-zinc-700">
+                                With great pleasure we invite you to celebrate our wedding with us
                                 </h2>
-                                <h1 className="font-bold text-zinc-700 pb-10 lg:pb-20 text-4xl md:text-5xl">
-                                    26.06.2022
+                             
+                                <h1 className="font-bold text-zinc-700 tracking-wider py-5 lg:pb-20 text-3xl md:text-4xl">
+                                on 24th of June 2022
                                 </h1>
                                 <div className="h-32 hidden lg:block"></div>
                             </div>
@@ -116,11 +118,11 @@ const Contact = () => {
                         <div className="md:text-3xl">
                             <a href="https://goo.gl/maps/wGyno8UJjkjUiwdV8" target="_blank">
                                 <h2 className="px-3 md:px-10 md:text-3xl text-zinc-700 pb-5 decoration-solid">
-                                    Свадбената Прослава ќе се одржи во летната градина на ресторант <span
-                                    className="text-zinc-700 font-extrabold hover:text-amber-500">„Ваго„</span>
+                                The wedding celebration will take place in the summer garden of the restaurant <span
+                                    className="font-extrabold text-zinc-700 hover:text-amber-500">„Vago„</span>
                                 </h2>
                             </a>
-                            <span className="text-zinc-700 font-extrabold text-2xl md:text-3xl"> во 19:30 часот</span>
+                            <span className="text-zinc-700 font-extrabold text-2xl md:text-3xl"> at 7:30 p.m.</span>
                         </div>
 
                         <div className="md:text-xl py-20  text-zinc-700 mx-auto">
@@ -128,31 +130,44 @@ const Contact = () => {
                                 <div className="mx-auto flex-2">
                                     <img src={IconCurch} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
                                     <div className="">
-                                        16:00 часот
+                                    4:00 p.m.
                                     </div>
                                 </div>
                                 <div className="mx-auto ">
                                     <img src={IconRings} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
                                     <div className="">
-                                        16:30 часот
+                                    4:30 p.m.
                                     </div>
                                 </div>
                                 <div className="mx-auto ">
                                     <img src={IconPhoto} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
                                     <div className="text-lg text-zinc-700">
-                                        19:30 часот
+                                    7:30 p.m.
+                                    </div>
+                                </div>
+                                <div className="mx-auto ">
+                                    <img src={IconCheers} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                    <div className="text-lg text-zinc-700">
+                                       8:00 p.m.
+                                    </div>
+                                </div>
+                                
+                                <div className="mx-auto">
+                                    <img src={IconDinner} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                    <div className="text-lg text-zinc-700">
+                                    22:00 hrs.
+                                    </div>
+                                </div>
+                                <div className="mx-auto">
+                                    <img src={IconCake} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                    <div className="text-lg text-zinc-700">
+                                    23:00 hrs.
                                     </div>
                                 </div>
                                 <div className="mx-auto">
                                     <img src={IconDance} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
                                     <div className="">
-                                        20:00 часот
-                                    </div>
-                                </div>
-                                <div className="mx-auto">
-                                    <img src={IconDinner} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="text-lg text-zinc-700">
-                                        22:00 часот
+                                    8:00 p.m.
                                     </div>
                                 </div>
 
@@ -172,24 +187,24 @@ const Contact = () => {
                             >
 
                                 <div>
-                                    <img src={FooterFlower} alt="Logo" className="mx-auto lg:hidden block "/>
+                                    <img src={FooterFlower} alt="Logo" className="mx-auto"/>
                                 </div>
 
-                                <div className="flex flex-row justify-between drop-shadow-sm">
+                                {/* <div className="flex flex-row justify-between drop-shadow-sm">
 
 
                                     <div>
-                                        <img src={FlowerForm} alt="Logo" className="mx-auto md:-mt-20 hidden lg:block"/>
+                                        <img src={FlowerForm} alt="Logo" className="mx-auto hidden lg:block"/>
                                     </div>
-                                    <div className="lg:pt-20 pb-5 xl:pt-40 md:text-2xl px-5 md:px-10 ">Ве молиме
-                                        потврдете го вашето присуство со што ке ја потполните оваа контакна форма
-                                    </div>
+                                    
                                     <div>
-                                        <img src={FlowerFormReverse} alt="Logo"
+                                        <img src={FlowerFormReverse} alt="Flower"
                                              className="mx-auto md:-mt-20 hidden lg:block"/>
                                     </div>
-                                </div>
-
+                                </div> */}
+                                  <div className="lg:pt-20 pb-5 md:text-2xl px-5 md:px-10 ">
+                                  Please confirm your attendance by 10th  June 2022
+                                    </div>
                                 <div className="pb-5 flex-col">
                                     <input type="hidden" name="contact" value="contact"/>
 
@@ -199,7 +214,7 @@ const Contact = () => {
                                         name="name"
                                         onChange={handleChange}
                                         value={formState.name}
-                                        placeholder="Внесете име и презиме"
+                                        placeholder="Your Name"
                                         className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline "
                                     />
                                 </div>
@@ -210,13 +225,12 @@ const Contact = () => {
                                         name="email"
                                         onChange={handleChange}
                                         value={formState.email}
-                                        placeholder="Внесете го вашиот емаил"
+                                        placeholder="Your email"
                                         className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline "
                                     />
                                 </div>
-
-                                <div className="py-5 flex-col">
-                                    <label>Strana : </label><br/>
+                                <span className="mt-5 mx-auto ">Choose which side you are invited from: </span> 
+                                <div className="py-5">
                                     <input
                                         type="radio"
                                         name="side"
@@ -226,9 +240,9 @@ const Contact = () => {
                                         }}
                                         value="male"
                                         placeholder="Страна младоженец"
-                                        className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline"
-                                    />Страна младоженец
-                                    <br/>
+                                        className="mx-auto bg-white border-2 border-amber-500 rounded-sm focus:outline-none focus:shadow-outline ml-5 px-2"
+                                    /><label className="px-1 "> Groom</label>
+                                    
                                     <input
                                         type="radio"
                                         onChange={(e) => {
@@ -238,12 +252,12 @@ const Contact = () => {
                                         value="female"
                                         name="side"
                                         placeholder="Страна невеста"
-                                        className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline"
-                                    />Страна невеста
+                                        className="mx-auto bg-white border-2 border-amber-500 rounded-sm focus:outline-none focus:shadow-outline ml-5 px-2"
+                                    /><label className="px-1 ">Bride</label>
                                 </div>
-                                <div className="py-5 flex-col">
+                                <div className="py-5 mx-auto w-11/12 md:w-2/4">
                                     <Dropdown
-                                        label="Број на гости кој потврдуваат присуство :"
+                                        label="Number of guests confirming attendance :"
                                         options={options}
                                         numberToAttend={numberToAttend}
                                         onChange={(e) => {
@@ -257,42 +271,32 @@ const Contact = () => {
                                         type="submit"
                                         className="mx-auto w-11/12 md:w-2/4 bg-amber-500 text-white mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline"
                                     >
-                                        Send
+                                       Send
                                     </button>
                                 </div>
 
                                 <div>
                                     <img src={FooterFlower} alt="Logo" className="mx-auto md:-mt-20 md:pt-20 md:px-20"/>
                                 </div>
-
+                                <div className="bg-white ">
+                        <footer> Created with love by <span className="text-amber-500 ">Sanja & Ivan</span>
+                            <div> 2022</div>
+                        </footer>
+                    </div>
                             </form>
                         </div>
 
 
                     </div>
 
-                    <div className="bg-white max-h-96 sm:mt-20 mb-10 ">
-                        <footer> Created with love by <span className="text-amber-500 ">Sanja & Ivan</span>
-                            <div> 2022</div>
-                        </footer>
-                    </div>
+                    
 
                 </div>
-
+                  
 
             </section>
+            
 
-
-            {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-   <StaticImage src="../images/background.jpg" alt="gatsby astronaut" />
-     <StaticImage src="../images/ivanisanja-bg.png"/>
-      <p>
-      <Link to="/page-2/">Go to page 2</Link>
-    </p>
-    <p>
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-    </div> */}
         </Layout>
 
     )
