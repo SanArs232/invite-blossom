@@ -27,7 +27,7 @@ const Contact = () => {
         name: "",
         email: "",
         side: "",
-        numberToAttend: "",
+        numberToAttend: 1,
     })
     const options = [
         {label: '1', numberToAttend: 1},
@@ -40,7 +40,7 @@ const Contact = () => {
         return (
             <label>
                 {label}
-                <select value={numberToAttend} onChange={onChange}>
+                <select value={numberToAttend} onChange={onChange} name="numberToAttend">
                     {options.map((option) => (
                         <option value={option.value}>{option.label}</option>
                     ))}
@@ -66,7 +66,7 @@ const Contact = () => {
         fetch("/", {
             method: "post",
             headers: {"Content-Type": "application/x-www-form-urlencoded"},
-            body: encode({"form-name": "contact", ...formState}),
+            body: encode({"form-name": "invitesForm", ...formState}),
         })
             .then(() => alert("Success!"))
             .catch(error => alert(error))
@@ -178,10 +178,10 @@ const Contact = () => {
                         <div className="bg-wedding">
                             <form
                                 onSubmit={handleSubmit}
-                                name="contact"
+                                name="invitesForm"
                                 method="post"
                                 data-netlify="true"
-                                data-netlify-honeypot="bot-field"
+                                // data-netlify-honeypot="bot-field"
                                 action="thank-you"
                                 netlify
                             >
@@ -274,10 +274,6 @@ const Contact = () => {
                                        Send
                                     </button>
                                 </div>
-                                {/*TEST*/}
-                                {/* <p>name: {formState.name}!</p>   <p>email: {formState.email}!</p>
-                                <p>side: {formState.side}!</p>   <p>numberToAttend: {formState.numberToAttend}!</p> */}
-                                {/*TEST*/}
 
                                 <div>
                                     <img src={FooterFlower} alt="Logo" className="mx-auto md:-mt-20 md:pt-20 md:px-20"/>
