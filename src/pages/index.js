@@ -118,56 +118,70 @@ const Contact = () => {
                         <div className="md:text-3xl">
                             <a href="https://goo.gl/maps/wGyno8UJjkjUiwdV8" target="_blank">
                                 <h2 className="px-3 md:px-10 md:text-3xl text-zinc-700 pb-5 decoration-solid">
-                                    Свадбената Прослава ќе се одржи во летната градина на ресторант <span
+                                    Свадбената Прослава ќе се одржи во летната градина на ресторантот <span
                                     className="text-zinc-700 font-extrabold hover:text-amber-500">„Ваго„</span>
                                 </h2>
                             </a>
-                            <span className="text-zinc-700 font-extrabold text-2xl md:text-3xl"> во 19:30 часот</span>
+                            <span className="text-zinc-700 font-extrabold text-2xl md:text-3xl">сo почеток во 19:30 часот</span>
                         </div>
 
                         <div className="md:text-xl py-20  text-zinc-700 mx-auto">
                             <div className="flex-wrap flex flex-row -mt-10 ">
                                 <div className="mx-auto flex-2">
+                                <a href="https://goo.gl/maps/68JCsubYhqEi5aYu6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconCurch} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="text-lg text-zinc-700">
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         16:00 часот
                                     </div>
+                                  </a>
                                 </div>
                                 <div className="mx-auto ">
+                                <a href="https://goo.gl/maps/68JCsubYhqEi5aYu6" target="_blank" className="text-gray-800 lg:inline-block "> 
                                     <img src={IconRings} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="text-lg text-zinc-700">
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         16:30 часот
                                     </div>
+                                 </a>   
                                 </div>
                                 <div className="mx-auto ">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconPhoto} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="text-lg text-zinc-700">
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         19:30 часот
                                     </div>
+                                    </a>
                                 </div>
-                                <div className="mx-auto ">
+                                <div className="mx-auto">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconCheers} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="text-lg text-zinc-700">
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         20:00 часот
                                     </div>
+                                    </a>    
                                 </div>
                                 <div className="mx-auto ">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconDinner} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="text-lg text-zinc-700">
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         22:00 часот
                                     </div>
+                                    </a>    
                                 </div>
                                 <div className="mx-auto">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconCake} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="">
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         23:00 часот
                                     </div>
+                                    </a>    
                                 </div>
                                 <div className="mx-auto">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconDance} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="text-lg text-zinc-700">
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         20:00-01:00 часот
                                     </div>
+                                  </a>    
                                 </div>
 
                             </div>
@@ -189,7 +203,7 @@ const Contact = () => {
                                     <img src={FooterFlower} alt="Logo" className="mx-auto"/>
                                 </div>
 
-                                <div className="mx-auto lg:pt-10 pb-5 md:text-2xl px-2 text-xl md:px-10 w/3/4 lg:w-2/4">
+                                <div className="mx-auto lg:pt-10 pb-5 md:text-3xl px-2 text-xl md:px-10 w/3/4 lg:w-2/4">
                                   Ве молиме потврдете го вашето присуство најдоцна до 10 јуни 2022 годинаа
                                 </div>
 

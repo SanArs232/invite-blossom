@@ -35,13 +35,13 @@ function Header({ siteTitle }) {
         <div className="text-lg container mx-auto items-center text-center font-bold">
         <div className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 "
           ><a href="https://goo.gl/maps/wGyno8UJjkjUiwdV8" target="_blank" className="text-gray-800 lg:inline-block hover:text-amber-500">
-            Location
+          Restaurant Location
         </a>
           </div>
          
           <Link
             to={`/`}
-            className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-gray-800"
+            className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 hover:text-amber-500"
           >
             / Macedonian
           </Link>

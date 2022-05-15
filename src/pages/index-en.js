@@ -91,7 +91,7 @@ const Contact = () => {
 
                             <div>
                                 <h2 className=" px-3 md:px-10 pb-5 mx-auto md:text-3xl font-bold  text-zinc-700">
-                                With great pleasure we invite you to celebrate our wedding with us
+                                With great pleasure, we invite you to celebrate our wedding with us
                                 </h2>
                              
                                 <h1 className="font-bold text-zinc-700 tracking-wider py-5 lg:pb-20 text-3xl md:text-4xl">
@@ -118,59 +118,74 @@ const Contact = () => {
                         <div className="md:text-3xl">
                             <a href="https://goo.gl/maps/wGyno8UJjkjUiwdV8" target="_blank">
                                 <h2 className="px-3 md:px-10 md:text-3xl text-zinc-700 pb-5 decoration-solid">
-                                The wedding celebration will take place in the summer garden of the restaurant <span
+                                The wedding celebration will take place in the summer garden - restaurant <span
                                     className="font-extrabold text-zinc-700 hover:text-amber-500">„Vago„</span>
                                 </h2>
                             </a>
-                            <span className="text-zinc-700 font-extrabold text-2xl md:text-3xl"> at 7:30 p.m.</span>
+                            <span className="text-zinc-700 font-extrabold text-2xl md:text-3xl"> starting at 7:30 p.m.</span>
                         </div>
 
                         <div className="md:text-xl py-20  text-zinc-700 mx-auto">
                             <div className="flex-wrap flex flex-row -mt-10 ">
                                 <div className="mx-auto flex-2">
+                                <a href="https://goo.gl/maps/68JCsubYhqEi5aYu6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconCurch} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="">
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500">
                                     4:00 p.m.
                                     </div>
+                                </a>    
                                 </div>
                                 <div className="mx-auto ">
+                                <a href="https://goo.gl/maps/68JCsubYhqEi5aYu6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconRings} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="">
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500 ">
                                     4:30 p.m.
                                     </div>
+                                </a>     
                                 </div>
+                               
                                 <div className="mx-auto ">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconPhoto} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="text-lg text-zinc-700">
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500 ">
                                     7:30 p.m.
                                     </div>
+                                    </a>
                                 </div>
                                 <div className="mx-auto ">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconCheers} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="text-lg text-zinc-700">
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500 ">
                                        8:00 p.m.
                                     </div>
+                                    </a>    
                                 </div>
                                 
                                 <div className="mx-auto">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconDinner} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="text-lg text-zinc-700">
-                                    22:00 hrs.
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500 ">
+                                    10:00 p.m.
                                     </div>
+                                    </a>    
                                 </div>
                                 <div className="mx-auto">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconCake} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="text-lg text-zinc-700">
-                                    23:00 hrs.
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500 ">
+                                    11:00 p.m.
                                     </div>
+                                    </a>    
                                 </div>
                                 <div className="mx-auto">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconDance} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
-                                    <div className="">
-                                    8:00 p.m.
+                                    <div className="text-lg text-zinc-700 hover:text-amber-500 ">
+                                    8:00 p.m. - 1:00 a.m.
                                     </div>
+                                    </a>    
                                 </div>
-
+                            
                             </div>
                         </div>
 
@@ -202,7 +217,7 @@ const Contact = () => {
                                              className="mx-auto md:-mt-20 hidden lg:block"/>
                                     </div>
                                 </div> */}
-                                  <div className="mx-auto lg:pt-10 pb-5 md:text-2xl px-2 text-xl md:px-10 w/3/4 lg:w-2/4 ">
+                                  <div className="mx-auto lg:pt-10 pb-5 md:text-3xl px-2 text-xl md:px-10 w/3/4 lg:w-3/4 ">
                                   Please confirm your attendance by 10th  June 2022
                                     </div>
                                 <div className="pb-5 flex-col">
@@ -229,7 +244,7 @@ const Contact = () => {
                                         className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline "
                                     />
                                 </div>
-                                <span className="mt-5 mx-auto ">Choose which side you are invited from: </span> 
+                                <span className="mt-5 mx-auto">Choose which side you are invited from: </span> 
                                 <div className="py-5">
                                     <input
                                         type="radio"
