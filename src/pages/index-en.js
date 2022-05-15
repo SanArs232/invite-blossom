@@ -260,10 +260,6 @@ const Contact = () => {
                                         Send
                                     </button>
                                 </div>
-                                {/*TEST*/}
-                                <p>name: {formState.name}!</p>   <p>email: {formState.email}!</p>
-                                <p>side: {formState.side}!</p>   <p>numberToAttend: {formState.numberToAttend}!</p>
-                                {/*TEST*/}
 
                                 <div>
                                     <img src={FooterFlower} alt="Logo" className="mx-auto md:-mt-20 md:pt-20 md:px-20"/>
