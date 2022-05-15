@@ -64,7 +64,7 @@ const Contact = () => {
         fetch("/", {
             method: "post",
             headers: {"Content-Type": "application/x-www-form-urlencoded"},
-            body: encode({"form-name": "contactTestKire", ...formState}),
+            body: encode({"form-name": "invitesForm", ...formState}),
         })
             .then(() => alert("Success!"))
             .catch(error => alert(error))
@@ -163,7 +163,7 @@ const Contact = () => {
                         <div className="bg-wedding">
                             <form
                                 onSubmit={handleSubmit}
-                                name="contactTestKire"
+                                name="invitesForm"
                                 method="post"
                                 data-netlify="true"
                                 data-netlify-honeypot="bot-field"
@@ -246,6 +246,7 @@ const Contact = () => {
                                         label="Број на гости кој потврдуваат присуство :"
                                         options={options}
                                         numberToAttend={numberToAttend}
+                                        name="numberToAttend"
                                         onChange={(e) => {
                                             formState.numberToAttend = e.target.value;
                                             setValue(e.target.value);
