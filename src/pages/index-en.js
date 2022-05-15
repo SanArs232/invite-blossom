@@ -64,7 +64,7 @@ const Contact = () => {
         fetch("/", {
             method: "post",
             headers: {"Content-Type": "application/x-www-form-urlencoded"},
-            body: encode({"form-name": "contact", ...formState}),
+            body: encode({"form-name": "contactTestKire", ...formState}),
         })
             .then(() => alert("Success!"))
             .catch(error => alert(error))
@@ -163,7 +163,7 @@ const Contact = () => {
                         <div className="bg-wedding">
                             <form
                                 onSubmit={handleSubmit}
-                                name="contact"
+                                name="contactTestKire"
                                 method="post"
                                 data-netlify="true"
                                 data-netlify-honeypot="bot-field"
