@@ -202,7 +202,7 @@ const Contact = () => {
                                              className="mx-auto md:-mt-20 hidden lg:block"/>
                                     </div>
                                 </div> */}
-                                  <div className="lg:pt-20 pb-5 md:text-2xl px-5 md:px-10 ">
+                                  <div className="mx-auto lg:pt-10 pb-5 md:text-2xl px-2 text-xl md:px-10 w/3/4 lg:w-2/4 ">
                                   Please confirm your attendance by 10th  June 2022
                                     </div>
                                 <div className="pb-5 flex-col">

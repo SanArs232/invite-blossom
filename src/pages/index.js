@@ -186,11 +186,12 @@ const Contact = () => {
                             >
 
                                 <div>
-                                    <img src={FooterFlower} alt="Logo" className="mx-auto  "/>
+                                    <img src={FooterFlower} alt="Logo" className="mx-auto"/>
                                 </div>
 
-                                <div className=" mx-auto lg:pt-10 pb-5 md:text-2xl px-5 md:px-10 w-2/4">Ве молиме потврдете го вашето присуство најдоцна до 10 јуни 2022 годинаа
-                                    </div>
+                                <div className="mx-auto lg:pt-10 pb-5 md:text-2xl px-2 text-xl md:px-10 w/3/4 lg:w-2/4">
+                                  Ве молиме потврдете го вашето присуство најдоцна до 10 јуни 2022 годинаа
+                                </div>
 
                                 <div className="pb-5 flex-col">
                                     <input type="hidden" name="contact" value="contact"/>
