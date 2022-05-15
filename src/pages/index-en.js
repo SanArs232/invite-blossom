@@ -25,7 +25,7 @@ const Contact = () => {
         name: "",
         email: "",
         side: "",
-        numberToAttend: "",
+        numberToAttend: 1,
     })
     const options = [
         {label: '1', numberToAttend: 1},
