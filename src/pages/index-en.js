@@ -38,7 +38,7 @@ const Contact = () => {
         return (
             <label>
                 {label}
-                <select value={numberToAttend} onChange={onChange}>
+                <select value={numberToAttend} onChange={onChange} name="numberToAttend">
                     {options.map((option) => (
                         <option value={option.value}>{option.label}</option>
                     ))}
@@ -166,7 +166,7 @@ const Contact = () => {
                                 name="invitesForm"
                                 method="post"
                                 data-netlify="true"
-                                data-netlify-honeypot="bot-field"
+                                // data-netlify-honeypot="bot-field"
                                 action="thank-you"
                                 netlify
                             >
@@ -246,7 +246,6 @@ const Contact = () => {
                                         label="Број на гости кој потврдуваат присуство :"
                                         options={options}
                                         numberToAttend={numberToAttend}
-                                        name="numberToAttend"
                                         onChange={(e) => {
                                             formState.numberToAttend = e.target.value;
                                             setValue(e.target.value);
