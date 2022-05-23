@@ -34,7 +34,7 @@ function Header({ siteTitle }) {
       >
         <div className="text-lg container mx-auto items-center text-center font-bold">
         <div className="block mt-4 mr-4 text-gray-800 lg:inline-block lg:mt-0 "
-          ><a href="https://goo.gl/maps/wGyno8UJjkjUiwdV8" target="_blank" className="text-gray-800 lg:inline-block hover:text-amber-500">
+          ><a href="https://goo.gl/maps/wGyno8UJjkjUiwdV8" target="_blank" rel="noreferrer" className="text-gray-800 lg:inline-block hover:text-amber-500">
           Restaurant Location
         </a>
           </div>
@@ -47,7 +47,7 @@ function Header({ siteTitle }) {
           </Link>
 
           <div className="block mt-4 mr-4  lg:inline-block lg:mt-0 bg-white border-2 border-amber-500 px-5 "
-          ><a href="https://drive.google.com/drive/folders/14LFF_V_2fp7bfHYqUd-fJKgljmKZvP_n?usp=sharin8" target="_blank" className="text-gray-700 lg:inline-block hover:text-amber-500">
+          ><a href="https://drive.google.com/drive/folders/14LFF_V_2fp7bfHYqUd-fJKgljmKZvP_n?usp=sharin8" target="_blank" rel="noreferrer"  className="text-gray-700 lg:inline-block hover:text-amber-500">
             Upload pictures
         </a>
           </div>

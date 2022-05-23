@@ -90,7 +90,7 @@ const Contact = () => {
                             </div>
 
                             <div>
-                                <h2 className=" px-3 md:px-10 pb-5 lg:w-11/12 mx-auto md:text-3xl font-bold text-zinc-700">
+                                <h2 className="px-3 md:px-10 pb-5 lg:w-11/12 mx-auto md:text-3xl font-bold text-zinc-700">
                                     Чест и задоволство ни е да ве поканиме на нашата Свадбена Прослава
                                     на ден{" "}
                                 </h2>
@@ -127,57 +127,57 @@ const Contact = () => {
 
                         <div className="md:text-xl py-20  text-zinc-700 mx-auto">
                             <div className="flex-wrap flex flex-row -mt-10 ">
-                                <div className="mx-auto flex-2">
+                                <div className="mx-auto flex-2 px-2">
                                 <a href="https://goo.gl/maps/68JCsubYhqEi5aYu6" target="_blank" rel="noreferrer" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconCurch} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                    <img src={IconCurch} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         16:00 часот
                                     </div>
                                   </a>
                                 </div>
-                                <div className="mx-auto ">
+                                <div className="mx-auto px-2 ">
                                 <a href="https://goo.gl/maps/68JCsubYhqEi5aYu6" target="_blank" rel="noreferrer"  className="text-gray-800 lg:inline-block "> 
-                                    <img src={IconRings} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                    <img src={IconRings} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         16:30 часот
                                     </div>
                                  </a>   
                                 </div>
-                                <div className="mx-auto ">
+                                <div className="mx-auto px-2 ">
                                 <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank"  rel="noreferrer" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconPhoto} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                    <img src={IconPhoto} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         19:00 часот
                                     </div>
                                     </a>
                                 </div>
-                                <div className="mx-auto">
+                                <div className="mx-auto px-2">
                                 <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" rel="noreferrer" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconCheers} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                    <img src={IconCheers} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         20:00 часот
                                     </div>
                                     </a>    
                                 </div>
-                                <div className="mx-auto ">
+                                <div className="mx-auto px-2">
                                 <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" rel="noreferrer" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconDinner} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                    <img src={IconDinner} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         22:00 часот
                                     </div>
                                     </a>    
                                 </div>
-                                <div className="mx-auto">
+                                <div className="mx-auto px-2">
                                 <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" rel="noreferrer" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconCake} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                    <img src={IconCake} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         23:00 часот
                                     </div>
                                     </a>    
                                 </div>
-                                <div className="mx-auto">
+                                <div className="mx-auto px-2">
                                 <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" rel="noreferrer" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconDance} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                    <img src={IconDance} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500">
                                         20:00-01:00 часот
                                     </div>

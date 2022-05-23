@@ -90,11 +90,11 @@ const Contact = () => {
                             </div>
 
                             <div>
-                                <h2 className=" px-3 md:px-10 pb-5 mx-auto md:text-3xl font-bold  text-zinc-700">
+                                <h2 className=" px-3 md:px-10 pb-5 mx-auto sm:text-3xl font-bold  text-zinc-700">
                                 With immense pleasure we invite you to our wedding celebration
                                 </h2>
                              
-                                <h1 className="font-bold text-zinc-700 tracking-wider px-2 py-5 lg:pb-20 text-3xl md:text-4xl">
+                                <h1 className="font-bold text-zinc-700 tracking-wider px-2 py-2 lg:pb-20 text-3xl md:text-4xl">
                                 on 24th of June 2022
                                 </h1>
                                 <div className="h-32 hidden lg:block"></div>
@@ -116,70 +116,70 @@ const Contact = () => {
 
                     <div div className="font-bold text-zinc-700 lg:mt-40">
                         <div className="md:text-3xl">
-                            <a href="https://goo.gl/maps/wGyno8UJjkjUiwdV8" target="_blank">
-                                <h2 className="px-3 md:px-10 md:text-3xl text-zinc-700 pb-5 decoration-solid">
-                                The wedding celebration will take place in the summer garden - restaurant <span
+                            <a href="https://goo.gl/maps/wGyno8UJjkjUiwdV8" target="_blank" rel="noreferrer" >
+                                <h2 className="px-3 md:px-10 sm:text-3xl text-zinc-700 pb-5 decoration-solid">
+                                The wedding ceremony will be held in the summer garden - restaurant <span
                                     className="font-extrabold text-zinc-700 hover:text-amber-500">„Vago„</span>
                                 </h2>
                             </a>
-                            <span className="text-zinc-700 font-extrabold text-2xl md:text-3xl"> starting at 7:00 p.m.</span>
+                            <span className="text-zinc-700 font-extrabold text-2xl sm:text-3xl"> starting at 7:00 p.m.</span>
                         </div>
 
                         <div className="md:text-xl py-20  text-zinc-700 mx-auto">
                             <div className="flex-wrap flex flex-row -mt-10 ">
-                                <div className="mx-auto flex-2">
-                                <a href="https://goo.gl/maps/68JCsubYhqEi5aYu6" target="_blank" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconCurch} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                <div className="mx-auto flex-2 px-2">
+                                <a href="https://goo.gl/maps/68JCsubYhqEi5aYu6" target="_blank" rel="noreferrer" className="text-gray-800 lg:inline-block ">
+                                    <img src={IconCurch} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500">
                                     4:00 p.m.
                                     </div>
                                 </a>    
                                 </div>
-                                <div className="mx-auto ">
-                                <a href="https://goo.gl/maps/68JCsubYhqEi5aYu6" target="_blank" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconRings} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                <div className="mx-auto px-2">
+                                <a href="https://goo.gl/maps/68JCsubYhqEi5aYu6" target="_blank" rel="noreferrer" className="text-gray-800 lg:inline-block ">
+                                    <img src={IconRings} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500 ">
                                     4:30 p.m.
                                     </div>
                                 </a>     
                                 </div>
                                
-                                <div className="mx-auto ">
-                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconPhoto} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                <div className="mx-auto px-2 ">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" rel="noreferrer" className="text-gray-800 lg:inline-block ">
+                                    <img src={IconPhoto} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500 ">
                                     7:00 p.m.
                                     </div>
                                     </a>
                                 </div>
-                                <div className="mx-auto ">
-                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconCheers} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                <div className="mx-auto px-2">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" rel="noreferrer"  className="text-gray-800 lg:inline-block ">
+                                    <img src={IconCheers} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500 ">
                                        8:00 p.m.
                                     </div>
                                     </a>    
                                 </div>
                                 
-                                <div className="mx-auto">
-                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconDinner} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                <div className="mx-auto px-2">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" rel="noreferrer" className="text-gray-800 lg:inline-block ">
+                                    <img src={IconDinner} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500 ">
                                     10:00 p.m.
                                     </div>
                                     </a>    
                                 </div>
-                                <div className="mx-auto">
-                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconCake} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                <div className="mx-auto px-2">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" rel="noreferrer"  className="text-gray-800 lg:inline-block ">
+                                    <img src={IconCake} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500 ">
                                     11:00 p.m.
                                     </div>
                                     </a>    
                                 </div>
-                                <div className="mx-auto">
-                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
-                                    <img src={IconDance} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
+                                <div className="mx-auto px-2">
+                                <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" rel="noreferrer"  className="text-gray-800 lg:inline-block ">
+                                    <img src={IconDance} alt="Logo" className="max-w-auto mx-auto h-28 sm:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500 ">
                                     8:00 p.m. - 1:00 a.m.
                                     </div>
