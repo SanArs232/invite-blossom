@@ -91,10 +91,10 @@ const Contact = () => {
 
                             <div>
                                 <h2 className=" px-3 md:px-10 pb-5 mx-auto md:text-3xl font-bold  text-zinc-700">
-                                With great pleasure, we invite you to celebrate our wedding with us
+                                With immense pleasure we invite you to our wedding celebration
                                 </h2>
                              
-                                <h1 className="font-bold text-zinc-700 tracking-wider py-5 lg:pb-20 text-3xl md:text-4xl">
+                                <h1 className="font-bold text-zinc-700 tracking-wider px-2 py-5 lg:pb-20 text-3xl md:text-4xl">
                                 on 24th of June 2022
                                 </h1>
                                 <div className="h-32 hidden lg:block"></div>
@@ -122,7 +122,7 @@ const Contact = () => {
                                     className="font-extrabold text-zinc-700 hover:text-amber-500">„Vago„</span>
                                 </h2>
                             </a>
-                            <span className="text-zinc-700 font-extrabold text-2xl md:text-3xl"> starting at 7:30 p.m.</span>
+                            <span className="text-zinc-700 font-extrabold text-2xl md:text-3xl"> starting at 7:00 p.m.</span>
                         </div>
 
                         <div className="md:text-xl py-20  text-zinc-700 mx-auto">
@@ -148,7 +148,7 @@ const Contact = () => {
                                 <a href="https://goo.gl/maps/SpJgEDjPJNj5pvLx6" target="_blank" className="text-gray-800 lg:inline-block ">
                                     <img src={IconPhoto} alt="Logo" className="max-w-auto mx-auto h-28 md:h-auto"/>
                                     <div className="text-lg text-zinc-700 hover:text-amber-500 ">
-                                    7:30 p.m.
+                                    7:00 p.m.
                                     </div>
                                     </a>
                                 </div>
