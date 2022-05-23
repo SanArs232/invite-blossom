@@ -1,8 +1,8 @@
 import React from "react"
-import {Link} from "gatsby"
-import {StaticImage} from "gatsby-plugin-image"
+// import {Link} from "gatsby"
+// import {StaticImage} from "gatsby-plugin-image"
 import {useState} from "react"
-import ImageRing from "../images/ring-ivanisanja.png"
+// import ImageRing from "../images/ring-ivanisanja.png"
 import Navi from "../components/header-en"
 // import ImageFlower from "../images/upper-flower.png"
 // import ImageFlowerReverse from "../images/upper-flower-reverse.png"
@@ -200,23 +200,9 @@ const Contact = () => {
                                 action="thank-you"
                                 netlify
                             >
-
                                 <div>
                                     <img src={FooterFlower} alt="Logo" className="mx-auto"/>
                                 </div>
-
-                                {/* <div className="flex flex-row justify-between drop-shadow-sm">
-
-
-                                    <div>
-                                        <img src={FlowerForm} alt="Logo" className="mx-auto hidden lg:block"/>
-                                    </div>
-                                    
-                                    <div>
-                                        <img src={FlowerFormReverse} alt="Flower"
-                                             className="mx-auto md:-mt-20 hidden lg:block"/>
-                                    </div>
-                                </div> */}
                                   <div className="mx-auto lg:pt-10 pb-5 md:text-3xl px-2 text-xl md:px-10 w/3/4 lg:w-3/4 ">
                                   Please confirm your attendance by 10th  June 2022
                                     </div>
