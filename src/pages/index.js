@@ -68,7 +68,7 @@ const Contact = () => {
             headers: {"Content-Type": "application/x-www-form-urlencoded"},
             body: encode({"form-name": "contact", ...formState}),
         })
-            .then(() => alert("Success!"))
+            .then(() => alert("Успешно потврдено присуство!"))
             .catch(error => alert(error))
 
         e.preventDefault()
