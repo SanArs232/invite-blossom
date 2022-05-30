@@ -40,7 +40,7 @@ const Contact = () => {
         return (
             <label>
                 {label}
-                <select value={numberToAttend} onChange={onChange}>
+                <select value={numberToAttend} onChange={onChange} name="numberToAttend">
                     {options.map((option) => (
                         <option value={option.value}>{option.label}</option>
                     ))}
