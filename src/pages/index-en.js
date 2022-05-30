@@ -118,7 +118,7 @@ const Contact = () => {
                         <div className="md:text-3xl">
                             <a href="https://goo.gl/maps/wGyno8UJjkjUiwdV8" target="_blank" rel="noreferrer" >
                                 <h2 className="px-3 md:px-10 sm:text-3xl text-zinc-700 pb-5 decoration-solid">
-                                The wedding celebration will be held in the summer garden - restaurant <span
+                                Wedding celebration will be held in the summer garden - restaurant <span
                                     className="font-extrabold text-zinc-700 hover:text-amber-500">„Vago„</span>
                                 </h2>
                             </a>
