@@ -218,6 +218,7 @@ const Contact = () => {
                                         value={formState.name}
                                         placeholder="Внесете име и презиме"
                                         className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline "
+                                        required
                                     />
                                 </div>
                                 <div className="py-5 flex-col">
@@ -260,6 +261,7 @@ const Contact = () => {
                                 <div className="py-5 mx-auto w-11/12 md:w-2/4">
                                     <Dropdown
                                         label="Број на гости кој потврдуваат присуство :"
+                                        required
                                         options={options}
                                         numberToAttend={numberToAttend}
                                         onChange={(e) => {

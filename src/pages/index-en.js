@@ -215,6 +215,7 @@ const Contact = () => {
                                         name="name"
                                         onChange={handleChange}
                                         value={formState.name}
+                                        required
                                         placeholder="Your Name"
                                         className="mx-auto w-11/12 md:w-2/4 bg-white border-2 border-amber-500 mt-2 p-3 rounded-sm focus:outline-none focus:shadow-outline "
                                     />
@@ -260,6 +261,7 @@ const Contact = () => {
                                     <Dropdown
                                         label="Number of guests confirming attendance :"
                                         options={options}
+                                        required
                                         numberToAttend={numberToAttend}
                                         onChange={(e) => {
                                             formState.numberToAttend = e.target.value;
